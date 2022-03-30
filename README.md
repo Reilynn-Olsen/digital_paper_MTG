@@ -8,15 +8,11 @@ software is to have helper functions that help you do very common tasks (e.g. ta
 
 Board set up:
 ```
-|---|-----------|
-| Command zone | Attacking creatures and the Stack|
-|---|-----------|
-|Deck|Creatures|
-|---|-----------|
-|Graveyard| Non-Creatures permanents|
-|---|-----------|
-|Exile|Hand (until exported to another window)|
-|---|-----------|
+| Command Zone | Attack and Stack (temporary)            |
+|--------------|-----------------------------------------|
+| Deck         | Creatures                               |
+| Graveyard    | Non-Creature Permanents                 |
+| Exile        | Hand (until exported to another window) |
 ```
 
 To do:

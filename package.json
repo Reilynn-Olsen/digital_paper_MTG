@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./dist/electron.js",
   "contributors": [{"name": "Reilynn Olsen", "email": "ReilynnOlsen@gmail.com", "website": "https://github.com/Reilynn-Olsen"
-    }, {"name": "Seth Powell", "email": "SethPowellBusiness@gmail.com", "website": ""}],
+    }, {"name": "Seth Powell", "email": "SethPowellBusiness@gmail.com", "website": "https://github.com/SethPowell"}],
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^17.0.43",
