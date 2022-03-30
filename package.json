@@ -1,0 +1,24 @@
+{
+  "name": "digital_paper_mtg",
+  "version": "1.0.0",
+  "main": "./dist/electron.js",
+  "contributors": [{"name": "Reilynn Olsen", "email": "ReilynnOlsen@gmail.com", "website": "https://github.com/Reilynn-Olsen"
+    }, {"name": "Seth Powell", "email": "SethPowellBusiness@gmail.com", "website": ""}],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "electron": "^17.2.0",
+    "parcel": "^2.4.0",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "start": "tsc ./electron/*.ts --noEmitOnError --outDir ./dist && parcel serve ./public/index.html --public-url ./",
+    "electron": "electron ."
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2"
+  }
+}

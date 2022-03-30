@@ -1,0 +1,142 @@
+#playArea{
+  display: grid;
+  grid-template-columns: 146px 1fr;
+  grid-template-rows: 204px 204px 204px 204px 1fr;
+  grid-template-areas: "commandZone attack"
+                        "deck creatures"
+                        "graveyard permanents"
+                        "exile hand"
+}
+
+#commandZone {
+  grid-area: commandZone;
+}
+
+#attack{
+  grid-area: attack;
+}
+
+#permanents {
+  grid-area: permanents;
+}
+
+#creatures {
+  grid-area: creatures;
+}
+
+#hand{
+  grid-area: hand;
+}
+
+#deck{
+  grid-area: deck;
+}
+
+#exile{
+  grid-area: exile;
+}
+
+#graveyard{
+  grid-area: graveyard;
+}
+
+
+.creature{
+  grid-area: creatures;
+}
+
+.artifact{
+  grid-area: permanents;
+}
+
+.enchantment{
+  grid-area: permanents;
+}
+
+.planeswalker{
+  grid-area: permanents;
+}
+
+.land{
+  grid-area: permanents;
+}
+
+.spell{
+  grid-area: attack;
+}
+
+.cardBack{
+  height: 204px;
+  width: 146px;
+}
+
+#dropDown{
+  background-color: black;
+  padding: 1vh;
+}
+
+#dropDown > ul > p {
+  color: white;
+}
+#dropDown > p {
+  color: white;
+}
+
+.tapped{
+ transform: rotate(90deg); 
+ z-index: 0;
+}
+
+#libSearch{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tutor {
+  height: 12%;
+  width: 12%;
+}
+
+
+#loadingDiv{
+  margin: 40vh 40vw;
+  display: flex;
+  align-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
